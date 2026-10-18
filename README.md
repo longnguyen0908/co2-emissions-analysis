@@ -14,6 +14,18 @@ Data downloaded on 18 Oct 2026. The latest year with complete CO₂, GDP and pop
 
 ![GDP per capita vs CO2 per capita, bubble size = population](figures/scatter_gdp_pc_vs_co2_pc_bubble.png)
 
+## Dashboard version (SAP Analytics Cloud)
+
+For my individual final project in MIS 305 (Business Process & ERP Analytics), Fall 2025, I rebuilt this analysis as an interactive SAP Analytics Cloud story from cleaned OWID data. It has three charts: the top emitters in 2023, global emissions from 1900 to 2023, and the GDP vs CO₂ bubble chart for 2022.
+
+- **Emissions are concentrated:** China, the United States and India lead by a wide margin, and the drop-off after the top few countries is steep.
+- **The long-run trend is up:** global emissions climb steeply after about 1950, with short dips around 2009 and 2020.
+
+![Top CO2 emitters in 2023](dashboard/top_emitters_2023.png)
+![Global CO2 emissions, 1900 to 2023](dashboard/global_emissions_1900_2023.png)
+
+The bubble chart is in `dashboard/co2_vs_gdp_2022.png`. The dashboard is interactive (hover details, time-range selector), so the screenshots show its default view.
+
 ## Data
 
 [Our World in Data: CO₂ and Greenhouse Gas Emissions](https://github.com/owid/co2-data), published openly by Our World in Data (CC BY). GDP is in international dollars at 2011 prices (Maddison Project Database), and CO₂ per capita in tonnes per person (Global Carbon Budget).
@@ -42,4 +54,4 @@ jupyter notebook co2_emissions_analysis.ipynb
 
 It also runs in Google Colab.
 
-**Tools:** Python, pandas, NumPy, matplotlib, adjustText
+**Tools:** Python, pandas, NumPy, matplotlib, adjustText, SAP Analytics Cloud
