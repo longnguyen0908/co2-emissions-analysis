@@ -1,0 +1,6 @@
+# data is downloaded at run time, not stored in the repo
+data/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+Thumbs.db
